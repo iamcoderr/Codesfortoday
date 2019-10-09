@@ -16,8 +16,10 @@ void print(int **graph,int v,int *stack,int *visited,int start,int begin){
     print(graph,v,stack,visited,start+1,begin);
 }
 int main() {
+    cin.tie()
     int v,e,i,start=0,a,b;
     cin>>v>>e;
+    i=0;start=0;
     int **graph = new int*[v];
     int *visited = new int[v];
     int *stack = new int[v];
